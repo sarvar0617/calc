@@ -52,3 +52,4 @@ function del() {
     ? ((sign = ""), (input.value = a))
     : ((a = a.slice(0, -1)), (input.value = a));
 }
+// ai dan yordam oldim bazi joylarga del ni ai dan oldim
