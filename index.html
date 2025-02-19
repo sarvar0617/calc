@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <input class="window-calc" type="text" disabled placeholder="0" />
+      <div class="buttons">
+        <button onclick="reset()" class="clear">C</button>
+        <button onclick=" operator(`%`) " class="percent">%</button>
+        <button onclick=" operator(`/`) " class="operator">÷</button>
+        <button onclick=" operator(`*`) " class="operator">×</button>
+        <button onclick=" inputNumber(7) ">7</button>
+        <button onclick=" inputNumber(8) ">8</button>
+        <button onclick=" inputNumber(9) ">9</button>
+        <button onclick=" operator(`+`) " class="operator">+</button>
+        <button onclick=" inputNumber(4) ">4</button>
+        <button onclick=" inputNumber(5) ">5</button>
+        <button onclick=" inputNumber(6) ">6</button>
+        <button onclick=" operator(`-`)" class="operator">−</button>
+        <button onclick=" inputNumber(1)">1</button>
+        <button onclick=" inputNumber(2)">2</button>
+        <button onclick=" inputNumber(3)">3</button>
+        <button onclick=" calculate()" class="equals">=</button>
+        <button onclick=" inputNumber(0)" class="zero">0</button>
+        <button onclick=" del()" class="del">Del</button>
+      </div>
+    </div>
+  </body>
+</html>

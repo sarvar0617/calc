@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8b7fd4;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.calculator {
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 280px;
+  position: relative;
+}
+
+.window-calc {
+  color: rgb(255, 255, 255);
+  text-align: right;
+  font-size: 30px;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #2d2d2d;
+  outline: none;
+  border: none;
+}
+.window-calc::placeholder {
+  font-size: 30px;
+  color: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+button {
+  background-color: #3d3d3d;
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.1s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  background-color: #8b7fd4;
+}
+
+.equals {
+  background-color: #9d93e9;
+}
+.del{
+  background-color: #8b7fd4;
+}
+.clear,
+.percent {
+  background-color: #333333;
+  color: #fff;
+}
