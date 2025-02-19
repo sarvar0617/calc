@@ -22,21 +22,25 @@ function inputNumber(num) {
 }
 
 function calculate() {
-  if (sign === "+") {
-    res = numA + numB;
-  } else if (sign === "-") {
-    res = numA - numB;
-  } else if (sign === "*") {
-    res = numA * numB;
-  } else if (sign === "/") {
-  } else if (sign === "%") {
-    res = numA % numB;
-  }
+  if (a !== "" && b !== "" && sign !== "") {
+    const numA = parseFloat(a);
+    const numB = parseFloat(b);
 
-  input.value = res;
-  a = res.toString();
-  b = "";
-  sign = "";
+    if (sign === "+") {
+      res = numA + numB;
+    } else if (sign === "-") {
+      res = numA - numB;
+    } else if (sign === "*") {
+      res = numA * numB;
+    } else if (sign === "/") {
+      res = numA / numB;
+    }
+
+    input.value = res;
+    a = res.toString();
+    b = "";
+    sign = "";
+  }
 }
 
 function reset() {
@@ -52,4 +56,4 @@ function del() {
     ? ((sign = ""), (input.value = a))
     : ((a = a.slice(0, -1)), (input.value = a));
 }
-// ai dan yordam oldim bazi joylarga del ni ai dan oldim
+// ai dan yordam oldim bazi joylarga del ni ai dan oldim va calc dagi hatolarini
